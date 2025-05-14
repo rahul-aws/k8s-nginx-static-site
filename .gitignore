@@ -1,0 +1,10 @@
+# macOS system files
+.DS_Store
+
+
+*.log
+*.tmp
+
+
+# Other build artifacts (if applicable)
+*.swp

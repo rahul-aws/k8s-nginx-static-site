@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx-static-site
+  name: nginx-static-site-service
+  namespace: dev
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+    nodePort: 32040
+  selector:
+    app: nginx-static-site
+  type: NodePort
+

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nginx-static-site
+  name: nginx-static-site
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-static-site
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nginx-static-site
+    spec:
+      containers:
+      - image: rahul0526/docker-nginx-static-site
+        name: docker-nginx-static-site
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
