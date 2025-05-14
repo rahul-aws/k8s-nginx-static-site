@@ -62,8 +62,8 @@ Image: rahul0526/docker-nginx-static-site
 
 ## 🖼️ Screenshot
 
-![Preview](assets/screenshot1.png)
-![Preview](assets/screenshot2.png)
+![Preview](assets/Screenshot1.png)
+![Preview](assets/Screenshot2.png)
 
 ---
 
